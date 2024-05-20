@@ -1,0 +1,62 @@
+body { 
+    margin: 0; /* Remove the default margin */
+    background: rgb(0,0,0);
+    background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(185,113,132,1) 49%, rgba(255,11,82,1) 100%);
+}
+
+#image-row { 
+    /* Use flexbox to arrange the images in a row */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+}
+
+img { 
+    /* Prevent images from exceeding the width of their parent */
+    max-width: 100%;
+    height: auto;
+}
+
+#img-A{
+    filter: grayscale(30%) blur(5px);
+}
+#img-A:hover {
+    filter: hue-rotate(90deg);
+}
+
+#img-B{
+    filter: contrast(150%) saturate(30) grayscale(30%) blur(5px);
+}
+
+#img-B:hover {
+    filter: contrast(150%);
+    filter: saturate(30);
+}
+
+#img-C{
+    filter: drop-shadow(50px 50px 70px green) invert(75%);
+}
+
+#click-me {
+    /* Centre the button */
+    display: block;
+    margin: auto;
+    position: relative;
+    /* Style the button to look nice */
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+
+    font-size: 2em;
+    font-weight: bold;
+
+    box-shadow: 6px 6px pink, -8px 0 6px maroon;
+}
+
+#click-me:hover{
+    background-color: rgb(99, 23, 5);
+    bottom: 10px;
+    transition: margin-bottom 2s;
+}
